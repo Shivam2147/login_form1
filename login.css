@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.hero{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(rgb(255, 119, 228),rgb(113, 18, 113));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: animate 1s ease-in-out infinite;
+}
+@keyframes animate{
+   0%{
+    background-position: 0% 50%;
+   }
+   50%{
+    background-position: 50% 100%;
+   }
+   100%{
+    background-position: 100% 0%;
+   }
+}
+.form_container{
+    height: 70vh;
+    width: 65vw;
+    background-color: white;
+    display: flex;
+}
+.form_left{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.child{
+    height: 85%;
+    width: 60%;
+
+    /* background-color: red; */
+}
+.form_right{
+    height: 100%;
+    width: 50%;
+     background-color: black;
+    display: flex;
+    background-position: center; 
+    background-image: url(images/pp-pantone-chip_4.webp);
+    background-size: cover;
+}
+.google{
+    border-radius: 75px;
+    padding: 5px;
+    border: none;
+    width: 80%;
+    height: 30px;
+    cursor: pointer;
+}
+.google:focus{
+    outline:2px black solid;
+    /* background-color: black; */
+    /* color: white; */
+}
+.form_rember{
+    display: flex;
+    justify-content: space-between;
+}
+.login{
+    width: 80%;
+    background-color: rgb(194, 150, 232);
+}
+.empty{
+    margin-top: 20px;
+}
+a{
+    color: rgb(194, 150, 232);
+    text-decoration: none;
+}
+.input{
+    border: 1px gray solid;
+    width: 80%;
+}
+.input:focus{
+    border: none;
+}
+@media only screen and (max-width:650px){
+    .form_right{
+        width: 0%;
+        height: 0%;
+        background-image: none;
+    }
+    .form_left{
+        width: 100%;
+    }
+    .form_left .child{
+        width: 80%;
+    }
+}
+@media only screen and (max-width:560px){
+    .form_container{
+        height: 80%;
+    }
+}
