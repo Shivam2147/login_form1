@@ -103,6 +103,7 @@ a{
 }
 @media only screen and (max-width:560px){
     .form_container{
-        height: 80%;
+        height: 100%;
+        width: 100%;
     }
 }
