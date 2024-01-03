@@ -30,6 +30,7 @@ form.addEventListener("submit", (e) => {
         userDetails.push(inputValues);
         form.reset();
         sortByAge(userDetails);
+        console.log(userDetails);
     }
 
 })
