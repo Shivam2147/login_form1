@@ -25,12 +25,17 @@ form.addEventListener("submit", (e) => {
             pass,
             age
         }
-        btn.style.backgroundColor = ""
-        btn.textContent = "Login"
-        userDetails.push(inputValues)
-        form.reset()
-        console.log(userDetails);
+        btn.style.backgroundColor = "";
+        btn.textContent = "Login";
+        userDetails.push(inputValues);
+        form.reset();
+        sortByAge(userDetails);
     }
 
-
 })
+
+function sortByAge(arr){
+    const newArr = arr.sort((a,b)=> a.age - b.age);
+    
+    return newArr;
+}

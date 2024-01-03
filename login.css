@@ -45,15 +45,7 @@ label{
 
     /* background-color: red; */
 }
-.form_right{
-    height: 100%;
-    width: 50%;
-     background-color: black;
-    display: flex;
-    background-position: center; 
-    background-image: url(images/pp-pantone-chip_4.webp);
-    background-size: cover;
-}
+
 .google{
     border-radius: 75px;
     padding: 5px;
